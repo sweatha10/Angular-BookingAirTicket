@@ -1,0 +1,77 @@
+[
+    {
+        "airline": "novo",
+        "message": null,
+        "booking_info": null,
+        "flight": [
+            {
+                "segments": [
+                    {
+                        "name": "VQ-901",
+                        "plane": "ATR725",
+                        "departureDate": "2020-04-26T07:00",
+                        "origin": "DAC",
+                        "arrivalDate": "2020-04-26T07:55",
+                        "destination": "CGP",
+                        "stops": 0
+                    },
+                    {
+                        "name": "VQ-902",
+                        "plane": "ATR725",
+                        "departureDate": "2020-04-29T08:25",
+                        "origin": "CGP",
+                        "arrivalDate": "2020-04-29T09:20",
+                        "destination": "DAC",
+                        "stops": 0
+                    }
+                ]
+            },
+            {
+                "total_fare": 14408,
+                "total_base_fare": 11234,
+                "single_adult_fare": 2500,
+                "trip_id": null
+            },
+            {
+                "fare": [
+                    {
+                        "tax": 525,
+                        "fee": 4,
+                        "passenger_type": "Adult",
+                        "base_fare": 1971,
+                        "currency": "BDT",
+                        "discount": 0,
+                        "service_fee": 0.0,
+                        "agent_mark_up": 0.0,
+                        "other_charges": 0.0,
+                        "passenger_count": 2
+                    },
+                    {
+                        "tax": 0,
+                        "fee": 0,
+                        "passenger_type": "Child",
+                        "base_fare": 0,
+                        "currency": "BDT",
+                        "discount": 0,
+                        "service_fee": 0.0,
+                        "agent_mark_up": 0.0,
+                        "other_charges": 0.0,
+                        "passenger_count": 1
+                    },
+                    {
+                        "tax": 0,
+                        "fee": 0,
+                        "passenger_type": "Infant",
+                        "base_fare": 0,
+                        "currency": "BDT",
+                        "discount": 0,
+                        "service_fee": 0.0,
+                        "agent_mark_up": 0.0,
+                        "other_charges": 0.0,
+                        "passenger_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

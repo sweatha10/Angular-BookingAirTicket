@@ -1,0 +1,241 @@
+.sidenavbar {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    background-image: linear-gradient(to bottom right, #42231c, #0c0c0c);
+    position: fixed;
+    top: 3.75rem;
+    left: 0;
+    padding-top: 30px;
+
+    .form-full-width {
+        width: 60%;
+        margin-left: 30%;
+    }
+
+    .saveticket-bttn {
+        left: 45%;
+        width: 30%;
+    }
+    .bttn-search{
+        left: 44%;
+        width: 30%;
+    }
+}
+
+.main {
+    position: fixed;
+    left: 30%;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    .ticket-card {
+        top: 10%;
+        left: 2rem;
+        width: 50%;
+        background-color: whitesmoke;
+    }
+
+    .two {
+
+        // height: 35%;
+        .bookticket-bttn {
+            left: 80%;
+        }
+
+        .origin-dest {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        td {
+            font-size: 13px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+    .sidenavbar {
+        width: 30%;
+        height: 100%;
+        background-color: black;
+        background-image: linear-gradient(to bottom right, #42231c, #0c0c0c);
+        position: fixed;
+        top: 3.75rem;
+        left: 0;
+        padding-top: 30px;
+
+        .form-full-width {
+            width: 60%;
+            margin-left: 30%;
+        }
+
+        .saveticket-bttn {
+            left: 45%;
+            width: 30%;
+        }
+    }
+
+    .main {
+        position: fixed;
+        left: 30%;
+        top: 60px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        .ticket-card {
+            top: 10%;
+            left: 2rem;
+            width: 50%;
+            background-color: whitesmoke;
+        }
+
+        .two {
+
+            // height: 35%;
+            .bookticket-bttn {
+                left: 50%;
+                // width: 100%;
+            }
+
+            .origin-dest {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            td {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .sidenavbar {
+        width: 30%;
+        height: 100%;
+        background-color: black;
+        background-image: linear-gradient(to bottom right, #42231c, #0c0c0c);
+        position: fixed;
+        top: 3.75rem;
+        left: 0;
+        padding-top: 30px;
+
+        .form-full-width {
+            width: 60%;
+            margin-left: 30%;
+        }
+
+        .saveticket-bttn {
+            left: 45%;
+            width: 30%;
+        }
+    }
+
+    .main {
+        position: fixed;
+        left: 30%;
+        top: 60px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        .ticket-card {
+            top: 10%;
+            left: 2rem;
+            width: 50%;
+            background-color: whitesmoke;
+        }
+
+        .two {
+
+            // height: 35%;
+            .bookticket-bttn {
+                left: 50%;
+                // width: 100%;
+            }
+
+            .origin-dest {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            td {
+                font-size: 13px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidenavbar {
+        width: 30%;
+        height: 100%;
+        background-color: black;
+        background-image: linear-gradient(to bottom right, #42231c, #0c0c0c);
+        position: fixed;
+        top: 3.75rem;
+        left: 0;
+        padding-top: 30px;
+
+        .form-full-width {
+            width: 60%;
+            margin-left: 30%;
+        }
+
+        .saveticket-bttn {
+            left: 45%;
+            width: 30%;
+        }
+    }
+
+    .main {
+        position: fixed;
+        left: 30%;
+        top: 60px;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+
+        .ticket-card {
+            top: 5%;
+            left: 2rem;
+            width: 50%;
+            background-color: whitesmoke;
+        }
+
+        .country-title {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .two {
+
+            // height: 35%;
+            .bookticket-bttn {
+                left: 80%;
+            }
+
+            .origin-dest {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            td {
+                font-size: 13px;
+            }
+
+            td:nth-child(odd) {
+                padding-right: 60px;
+            }
+        }
+
+    }
+}

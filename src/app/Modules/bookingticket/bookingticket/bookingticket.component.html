@@ -1,0 +1,69 @@
+<div class="sidenavbar" *ngIf="ticketData">
+    <form #ticketForm="ngForm">
+        <mat-form-field class="form-full-width">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput maxlength="25" placeholder="Name" name="name" (keydown)="checkWord($event)"
+                [(ngModel)]="name" required>
+        </mat-form-field>
+        <mat-form-field class="form-full-width">
+            <mat-label>Passenger</mat-label>
+            <input matInput type="text" maxlength="3" placeholder="No.of.Passenger" name="passenger"
+                (keydown)="checkNumber($event)" [(ngModel)]="passenger" required>
+        </mat-form-field>
+        <mat-form-field class="form-full-width">
+            <mat-label>Age Category</mat-label>
+            <mat-select placeholder="Age Category" name="agecategory" [(ngModel)]="selectedAgecategory" required>
+                <mat-option *ngFor="let agecategory of ticketData[0].flight[2].fare"
+                    [value]="agecategory.passenger_type">
+                    {{agecategory.passenger_type}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="warn" (click)="search()" class="bttn-search">Search</button>
+    </form>
+</div>
+
+<div class="main">
+    <mat-card class="ticket-card one">
+        <mat-card-content>
+            <div *ngIf="ticketData">
+                <h4><span
+                        class="country-title">{{ticketData[0].flight[0].segments[0].origin}}</span>&nbsp;&nbsp;>&nbsp;&nbsp;<span
+                        class="country-title">{{ticketData[0].flight[0].segments[0].destination}}</span>
+                </h4>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <br>
+    <mat-card class="ticket-card two">  
+        <mat-card-content>
+            <div *ngIf="ticketData">
+                <h2>Rs. {{ getTotalTicketPrice() | number:'1.0-0'}}</h2>
+            </div>
+            <table *ngIf="ticketData">
+                <tr>
+                    <td>{{ticketData[0].flight[0].segments[0].name}}</td>
+                    <td>{{ticketData[0].flight[0].segments[1].name}}</td>
+                </tr>
+                <tr>
+                    <td class="origin-dest">
+                        <span>{{ticketData[0].flight[0].segments[0].origin}}</span>&nbsp;>&nbsp;<span>{{ticketData[0].flight[0].segments[0].destination}}</span>
+                    </td>
+                    <td class="origin-dest">
+                        <span>{{ticketData[0].flight[0].segments[1].origin}}</span>&nbsp;>&nbsp;<span>{{ticketData[0].flight[0].segments[1].destination}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Depart:&nbsp;{{ticketData[0].flight[0].segments[0].departureDate}}</td>
+                    <td>Depart:&nbsp;{{ticketData[0].flight[0].segments[1].departureDate}}</td>
+                </tr>
+                <tr>
+                    <td>Arrive:&nbsp;{{ticketData[0].flight[0].segments[0].arrivalDate}}</td>
+                    <td>Arrive:&nbsp;{{ticketData[0].flight[0].segments[1].arrivalDate}}</td>
+                </tr>
+            </table>
+            <button mat-raised-button color="warn" (click)="ticketbooked()" class="bookticket-bttn">Book Ticket</button>
+        </mat-card-content>
+    </mat-card>
+
+</div>
